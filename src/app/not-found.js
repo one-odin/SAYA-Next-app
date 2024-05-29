@@ -10,7 +10,7 @@ export default function NotFound() {
           <p className="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl">اتفاقی افتاده</p>
           <p className="mb-4 text-lg font-light text-gray-500">متاسفیم، این صفحه یافت نشد !</p>
           <Link href="/" className="inline-flex font-medium items-center text-pink-500 hover:underline hover:transform hover:-translate-x-2 transition duration-300">
-            ادامه
+            صفحه اصلی
             <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" fill="none" viewBox="0 0 14 10">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
             </svg>
