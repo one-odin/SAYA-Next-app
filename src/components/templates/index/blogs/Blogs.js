@@ -23,9 +23,22 @@ export default function Blogs() {
       </h1>
       <p className="text-center font-normal text-gray-500 dark:text-gray-400">لیست آخرین مقالات</p>
 
+      {/* loading */}
+      {allPosts.length === 0 && (
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          <div class="max-w-sm p-10 text-center bg-gray-100 rounded-3xl mx-auto h-96 w-72 animate-pulse"></div>
+          <div class="max-w-sm p-10 text-center bg-gray-100 rounded-3xl mx-auto h-96 w-72 animate-pulse"></div>
+          <div class="max-w-sm p-10 text-center bg-gray-100 rounded-3xl mx-auto h-96 w-72 animate-pulse"></div>
+          <div class="max-w-sm p-10 text-center bg-gray-100 rounded-3xl mx-auto h-96 w-72 animate-pulse"></div>
+        </div>
+      )}
       {/* posts */}
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 justify-items-center">
-        {allPosts.lenght !== 0 ? allPosts.filter((item) => item.publish === true).map((item) => <Card key={item._id} {...item} />) : <div>درحال بارگذاری ...</div>}
+        {allPosts
+          .filter((item) => item.publish === true)
+          .map((item) => (
+            <Card key={item._id} {...item} />
+          ))}
       </div>
     </div>
   );
