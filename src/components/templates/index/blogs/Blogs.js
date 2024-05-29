@@ -16,7 +16,7 @@ export default function Blogs() {
   }, []);
 
   return (
-    <div className="mx-auto">
+    <div className="mx-auto px-3">
       {/* header */}
       <h1 className="mb-4 mt-20 text-center text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-4xl">
         <span className="text-transparent bg-clip-text bg-gradient-to-r to-pink-500 from-sky-400">مقالات</span>
