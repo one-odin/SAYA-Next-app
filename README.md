@@ -24,11 +24,11 @@ pnpm dev
 For build: 
 
 ```bash
-npm build
+npm run build
 # or
-yarn build
+yarn run build
 # or
-pnpm build
+pnpm run build
 ```
 
 For execute :
