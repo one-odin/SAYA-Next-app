@@ -3,11 +3,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Dependencies
 
-1- Tailwind, Headlessui and Heroicons(to UI implements)
-2- Formik & YUP (to implement forms and validation inputs in front-end and back-end)
-3- CKEditor (for write content)
-4- Mongoose (to work with DB)
-5- Dayjs and Jalaliday (for dates)
+- Tailwind, Headlessui and Heroicons(to UI implements)
+- Formik & YUP (to implement forms and validation inputs in front-end and back-end)
+- CKEditor (for write content)
+- Mongoose (to work with DB)
+- Dayjs and Jalaliday (for dates)
 
 ## Getting Started
 
