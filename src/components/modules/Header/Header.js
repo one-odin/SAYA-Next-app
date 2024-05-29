@@ -134,10 +134,10 @@ export default function Header() {
                 <Link href="/" className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-100">
                   صفحه اصلی
                 </Link>
-                <Link href="/blogs" className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-100">
+                <Link href="/blog" className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-100">
                   مدیریت مقالات
                 </Link>
-                <Link href="/add-new-blog" className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-100">
+                <Link href="/blog/add-post" className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-900 hover:bg-gray-100">
                   افزودن مقاله جدید
                 </Link>
               </div>
