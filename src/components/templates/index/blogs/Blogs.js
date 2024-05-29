@@ -1,10 +1,19 @@
+"use client";
+import {useState, useEffect} from "react";
 import Card from "@/components/modules/CardBlog/Card";
-import connectToDB from "@/configs/db";
-import Blog from "@/models/Blog";
 
-export default async function Blogs() {
-  connectToDB();
-  const allPosts = await Blog.find({publish: true}, "-__v").sort({_id: -1}).lean();
+export default function Blogs() {
+  const [allPosts, setAllPosts] = useState([]);
+
+  const getAllPostData = async () => {
+    await fetch("/api/posts")
+      .then((res) => res.json())
+      .then((data) => setAllPosts(data));
+  };
+
+  useEffect(() => {
+    getAllPostData();
+  }, []);
 
   return (
     <div className="mx-auto">
@@ -16,7 +25,7 @@ export default async function Blogs() {
 
       {/* posts */}
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 justify-items-center">
-        {allPosts ? allPosts.map((item) => <Card key={item._id} {...item} />) : <div>درحال بارگذاری ...</div>}
+        {allPosts.lenght !== 0 ? allPosts.filter((item) => item.publish === true).map((item) => <Card key={item._id} {...item} />) : <div>درحال بارگذاری ...</div>}
       </div>
     </div>
   );
