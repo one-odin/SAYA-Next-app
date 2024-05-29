@@ -75,7 +75,7 @@ export default function AddNewPost() {
         >
           {(props) => {
             return (
-              <form onSubmit={props.handleSubmit} className="block mx-auto mt-8 lg:w-1/2 w-full">
+              <form onSubmit={props.handleSubmit} className="block mx-auto ms:mx-3 mt-8 lg:w-1/2 w-full">
                 <div className="mb-5">
                   <label htmlFor="title" className="block mb-2 text-sm font-medium text-gray-600">
                     عنوان مقاله
