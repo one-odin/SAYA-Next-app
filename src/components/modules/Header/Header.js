@@ -92,7 +92,7 @@ export default function Header() {
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">
-            SAYA Skycraft
+            SAYA App
           </Link>
         </div>
       </nav>
