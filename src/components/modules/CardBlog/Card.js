@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Card(props) {
   return (
-    <div className="max-w-sm p-10 text-center bg-white border border-gray-200 rounded-3xl mx-auto">
+    <div className="max-w-sm p-10 text-center bg-white border border-gray-200 rounded-3xl mx-auto break-all">
       <Link href={`/blog/${props._id}`}>
         <h5 className="mb-8 text-xl font-semibold tracking-tight text-gray-900">{props.title}</h5>
       </Link>
