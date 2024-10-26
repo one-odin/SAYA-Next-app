@@ -29,7 +29,7 @@ export default async function postDetail({params}) {
             ) : (
               <header className="mb-4 lg:mb-6 not-format">
                 <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl">{post.title}</h1>
-                <div className="content leading-10" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(post.body, {USE_PROFILES: {html: true}})}}></div>
+                <div className="content leading-10 break-words" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.body, { USE_PROFILES: { html: true } }) }}></div>
               </header>
             )}
           </article>
