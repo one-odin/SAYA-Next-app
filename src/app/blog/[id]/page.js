@@ -2,9 +2,9 @@ import connectToDB from "@/configs/db";
 import Blog from "@/models/Blog";
 import DOMPurify from "isomorphic-dompurify";
 
-export default async function postDetail({params}) {
+export default async function postDetail({ params }) {
   connectToDB();
-  const post = await Blog.findById({_id: params.id});
+  const post = await Blog.findById({ _id: params.id });
 
   return (
     <>
